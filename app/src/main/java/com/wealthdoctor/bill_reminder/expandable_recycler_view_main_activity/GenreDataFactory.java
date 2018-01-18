@@ -19,22 +19,22 @@ public class GenreDataFactory {
 
 
     public static Genre makeRockGenre() {
-        return new Genre("Rock", makeRockArtists(), R.drawable.ic_electric_guitar);
+        return new Genre("Airtel", makeRockArtists(), R.mipmap.ic_launcher_round);
     }
 
 
 
     public static List<Artist> makeRockArtists() {
-        Artist queen = new Artist("Queen", true);
-        Artist styx = new Artist("Styx", false);
-        Artist reoSpeedwagon = new Artist("REO Speedwagon", false);
-        Artist boston = new Artist("Boston", true);
+        Artist queen = new Artist("Delete", true);
+        Artist styx = new Artist("Edit", false);
+        Artist reoSpeedwagon = new Artist("Already Paid", false);
+        //Artist boston = new Artist("Boston", true);
 
-        return Arrays.asList(queen, styx, reoSpeedwagon, boston);
+        return Arrays.asList(queen, styx, reoSpeedwagon);
     }
 
     public static Genre makeJazzGenre() {
-        return new Genre("Jazz", makeJazzArtists(), R.drawable.ic_saxaphone);
+        return new Genre("SBI", makeJazzArtists(), R.mipmap.ic_launcher_round);
     }
 
 
@@ -48,7 +48,7 @@ public class GenreDataFactory {
     }
 
     public static Genre makeClassicGenre() {
-        return new Genre("Classic", makeClassicArtists(), R.drawable.ic_violin);
+        return new Genre("Axis Bank", makeClassicArtists(), R.mipmap.ic_launcher_round);
     }
 
 
@@ -63,7 +63,7 @@ public class GenreDataFactory {
     }
 
     public static Genre makeSalsaGenre() {
-        return new Genre("Salsa", makeSalsaArtists(), R.drawable.ic_maracas);
+        return new Genre("BMTC", makeSalsaArtists(), R.mipmap.ic_launcher_round);
     }
 
 
@@ -78,7 +78,7 @@ public class GenreDataFactory {
     }
 
     public static Genre makeBluegrassGenre() {
-        return new Genre("Bluegrass", makeBluegrassArtists(), R.drawable.ic_banjo);
+        return new Genre("BSNL", makeBluegrassArtists(), R.mipmap.ic_launcher_round);
     }
 
 

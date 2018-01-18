@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.wealthdoctor.widget.FlexibleCalendar
+    <!--<com.wealthdoctor.widget.FlexibleCalendar
         android:id="@+id/calendar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,7 +13,7 @@
         custom:showWeek="true"
         custom:firstDayOfWeek="sunday"
         custom:state="expanded" />
-
+-->
 
 
 </RelativeLayout>

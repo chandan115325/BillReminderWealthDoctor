@@ -23,7 +23,7 @@ public class ExpandActivity extends AppCompatActivity {
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_expand);
+    /*setContentView(R.layout.activity_expand);
     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     getSupportActionBar().setTitle(getClass().getSimpleName());
 
@@ -48,10 +48,10 @@ public class ExpandActivity extends AppCompatActivity {
       public void onClick(View v) {
         adapter.toggleGroup(makeClassicGenre());
       }
-    });
+    });*/
   }
 
-  @Override
+ /* @Override
   protected void onSaveInstanceState(Bundle outState) {
     super.onSaveInstanceState(outState);
     adapter.onSaveInstanceState(outState);
@@ -61,5 +61,5 @@ public class ExpandActivity extends AppCompatActivity {
   protected void onRestoreInstanceState(Bundle savedInstanceState) {
     super.onRestoreInstanceState(savedInstanceState);
     adapter.onRestoreInstanceState(savedInstanceState);
-  }
+  }*/
 }

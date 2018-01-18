@@ -20,16 +20,17 @@ public class CalenderActivity extends AppCompatActivity {
     private LinearLayout calenderLL;
     private FlexibleCalendar viewCalendar;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        /*setContentView(R.layout.activity_calender);
 
         viewCalendar = (FlexibleCalendar) findViewById(R.id.calendar);
-        /*final Button btnCollapse = (Button) findViewById(R.id.btn_collapse);
+        *//*final Button btnCollapse = (Button) findViewById(R.id.btn_collapse);
         final Button btnExpand = (Button) findViewById(R.id.btn_expand);
 
-        calenderLL = (LinearLayout)findViewById(R.id.calender_ll);*/
+        calenderLL = (LinearLayout)findViewById(R.id.calender_ll);*//*
 
         // init calendar
         Calendar cal = Calendar.getInstance();
@@ -80,7 +81,7 @@ public class CalenderActivity extends AppCompatActivity {
 
         viewCalendar.select(new Day(2015, 4, 22));
 
-      /*  btnCollapse.setOnClickListener(new View.OnClickListener() {
+      *//*  btnCollapse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                // viewCalendar.collapse(500);

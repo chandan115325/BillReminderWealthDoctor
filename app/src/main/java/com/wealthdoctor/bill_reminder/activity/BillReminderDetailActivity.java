@@ -56,11 +56,12 @@ public class BillReminderDetailActivity extends AppCompatActivity implements Vie
         // toolbar fancy stuff
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Add Bill Account");
-        dummyView = (View) findViewById(R.id.dummyView);
+
 
         selectDateEditText = (TextInputEditText) findViewById(R.id.bill_reminder_due_date_edittext);
         amountEditText = (TextInputEditText) findViewById(R.id.bill_reminder_amount_edittext);
         informationEditText = (TextInputEditText) findViewById(R.id.bill_reminder_information_edittext);
+        dummyView = (View) findViewById(R.id.dummyView);
         addNoteEditText = (TextInputEditText) findViewById(R.id.bill_reminder_note);
 
         monthlyText = (TextView) findViewById(R.id.bill_reminder_monthly);

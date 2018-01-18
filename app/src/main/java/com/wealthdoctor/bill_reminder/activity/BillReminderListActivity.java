@@ -22,7 +22,7 @@ import java.util.List;
 
 public class BillReminderListActivity extends AppCompatActivity {
 
-    Toolbar toolbar;
+
     BillReminderAdapter adapter;
     List<BillReminderData> billReminderDataList;
     RecyclerView recyclerView;
