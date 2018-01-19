@@ -17,20 +17,14 @@ public class GenreDataFactory {
     }
 
 
-
     public static Genre makeRockGenre() {
         return new Genre("Airtel", makeRockArtists(), R.mipmap.ic_launcher_round);
     }
 
 
-
     public static List<Artist> makeRockArtists() {
-        Artist queen = new Artist("Delete",R.id.child_delete,R.id.child_edit, true);
-        //Artist styx = new Artist("Edit",1,1, false);
-        //Artist reoSpeedwagon = new Artist("Already Paid", 1,1,false);
-        //Artist boston = new Artist("Boston", true);
-
-        return Arrays.asList(queen);
+        Artist airtel = new Artist("Already Paid", R.id.child_delete, R.id.child_edit, true);
+        return Arrays.asList(airtel);
     }
 
     public static Genre makeJazzGenre() {
@@ -38,13 +32,10 @@ public class GenreDataFactory {
     }
 
 
-
     public static List<Artist> makeJazzArtists() {
-        Artist milesDavis = new Artist("Miles Davis",1,1, true);
-        Artist ellaFitzgerald = new Artist("Ella Fitzgerald", 1,1,true);
-        Artist billieHoliday = new Artist("Billie Holiday", 1,1,false);
+        Artist SBI = new Artist("Already Paid", R.id.child_delete, R.id.child_edit, true);
 
-        return Arrays.asList(milesDavis, ellaFitzgerald, billieHoliday);
+        return Arrays.asList(SBI);
     }
 
     public static Genre makeClassicGenre() {
@@ -52,14 +43,9 @@ public class GenreDataFactory {
     }
 
 
-
     public static List<Artist> makeClassicArtists() {
-        Artist beethoven = new Artist("Ludwig van Beethoven", 1,1,false);
-        Artist bach = new Artist("Johann Sebastian Bach", 1,1,true);
-        Artist brahms = new Artist("Johannes Brahms", 1,1,false);
-        Artist puccini = new Artist("Giacomo Puccini", 1,1,false);
-
-        return Arrays.asList(beethoven, bach, brahms, puccini);
+        Artist AxisBank = new Artist("Already Paid", R.id.child_delete, R.id.child_edit, true);
+        return Arrays.asList(AxisBank);
     }
 
     public static Genre makeSalsaGenre() {
@@ -67,14 +53,9 @@ public class GenreDataFactory {
     }
 
 
-
     public static List<Artist> makeSalsaArtists() {
-        Artist hectorLavoe = new Artist("Hector Lavoe", 1,1,true);
-        Artist celiaCruz = new Artist("Celia Cruz", 1,1,false);
-        Artist willieColon = new Artist("Willie Colon", 1,1,false);
-        Artist marcAnthony = new Artist("Marc Anthony", 1,1,false);
-
-        return Arrays.asList(hectorLavoe, celiaCruz, willieColon, marcAnthony);
+        Artist BMTC = new Artist("Already Paid", R.id.child_delete, R.id.child_edit, true);
+        return Arrays.asList(BMTC);
     }
 
     public static Genre makeBluegrassGenre() {
@@ -82,14 +63,9 @@ public class GenreDataFactory {
     }
 
 
-
     public static List<Artist> makeBluegrassArtists() {
-        Artist billMonroe = new Artist("Bill Monroe", 1,1,false);
-        Artist earlScruggs = new Artist("Earl Scruggs", 1,1,false);
-        Artist osborneBrothers = new Artist("Osborne Brothers", 1,1,true);
-        Artist johnHartford = new Artist("John Hartford", 1,1,false);
-
-        return Arrays.asList(billMonroe, earlScruggs, osborneBrothers, johnHartford);
+        Artist BSNL = new Artist("Already Paid", R.id.child_delete, R.id.child_edit, true);
+        return Arrays.asList(BSNL);
     }
 
 }

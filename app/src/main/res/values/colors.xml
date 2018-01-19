@@ -14,7 +14,7 @@
     <color name="bill_reminder_addnote_background">#ffff00</color>
     <color name="bill_reminder_floating_action_background_tint">#ffffff</color>
     <color name="bill_reminder_detail_activity_textView_color">#ffffff</color>
-
+    <color name="bill_reminder_tint_color">#757575</color>
     <!--Calender-->
     <color name="primary_pink">#3d5afe</color>
     <color name="primary_orange">#FBAF3F</color>
