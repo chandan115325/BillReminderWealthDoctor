@@ -2,6 +2,7 @@ package com.wealthdoctor.bill_reminder.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -34,7 +35,7 @@ public class BillReminderActivity extends AppCompatActivity {
     private FloatingActionButton addButton;
     private FlexibleCalendar viewCalendar;
     public GenreAdapter adapter;
-    boolean flag = false;
+    boolean flag = true;
 
     @SuppressLint("ClickableViewAccessibility")
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -44,7 +45,7 @@ public class BillReminderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bill_reminder);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        //getWindow().setNavigationBarColor(Color.WHITE);
         // toolbar fancy stuff
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //getSupportActionBar().setTitle(R.string.toolbar_title);
@@ -88,28 +89,37 @@ public class BillReminderActivity extends AppCompatActivity {
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 if (dy > 0) {
-                    viewCalendar.collapse(250);
+                    viewCalendar.collapse(500);
+
                 } else {
-                    viewCalendar.expand(250);
-                    //flag = true;
+                    viewCalendar.expand(500);
+
                 }
+            }
+        });
+
+        recyclerView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+               v.requestFocus();
+                return false;
             }
         });
         viewCalendar.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (flag) {
-                    viewCalendar.collapse(250);
+                    viewCalendar.collapse(500);
                     flag = false;
-                } else {
-                    viewCalendar.expand(250);
+                } else if(!flag) {
+                    viewCalendar.expand(500);
+                    flag = true;
                 }
                 return false;
             }
 
 
         });
-
 
 
         calender();

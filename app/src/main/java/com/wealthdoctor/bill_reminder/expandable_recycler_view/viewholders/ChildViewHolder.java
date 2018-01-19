@@ -27,6 +27,7 @@ public class ChildViewHolder extends RecyclerView.ViewHolder  {
     deleteIcon = (ImageView)itemView.findViewById(R.id.child_delete);
     alreadyPaid = (CheckBox) itemView.findViewById(R.id.child_already_paid);
 
+
     edit.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {

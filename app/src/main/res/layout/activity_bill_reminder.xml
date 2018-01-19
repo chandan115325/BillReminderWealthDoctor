@@ -23,8 +23,8 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="#3d5afe"
                 app:navigationIcon="@drawable/ic_action_back_white"
-                app:titleTextColor="#ffffff"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:titleTextColor="#ffffff" />
 
         </android.support.design.widget.AppBarLayout>
 
@@ -43,13 +43,17 @@
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/calendar" />
+            android:layout_below="@id/calendar"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="true" />
 
         <LinearLayout
             android:id="@+id/bill_total_LL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_below="@+id/recycler_view"
             android:background="#3d5afe"
             android:orientation="horizontal"
             android:weightSum="2">

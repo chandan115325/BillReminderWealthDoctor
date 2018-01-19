@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <dimen name="bill_reminder_due_date_ll_marginBottom">8dp</dimen>
     <dimen name="bill_reminder_due_LL_padding_top">16dp</dimen>
@@ -40,4 +40,6 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="design_navigation_icon_size" tools:override="true">40dp</dimen>
 </resources>

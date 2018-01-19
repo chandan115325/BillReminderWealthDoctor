@@ -2,47 +2,59 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusedByDefault="true"
+    android:focusableInTouchMode="true"
     android:layout_height="@dimen/list_item_height">
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="8dp"
-        android:weightSum="4"
-        >
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusedByDefault="true"
+        android:focusableInTouchMode="true"
+        android:weightSum="4">
 
 
         <ImageView
             android:id="@+id/child_delete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_child_delete_material_new"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            />
+            android:focusable="true"
+            android:focusedByDefault="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/ic_child_delete_material_new" />
+
         <ImageView
             android:id="@+id/child_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_child_edit_material"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            />
+            android:src="@drawable/ic_child_edit_material" />
+
         <TextView
             android:id="@+id/list_item_child"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginLeft="@dimen/list_item_left_margin"
-            android:gravity="center_vertical"
-            tools:text="Artist Name"
             android:layout_weight="1"
-            />
+            android:gravity="center_vertical"
+            tools:text="Artist Name" />
+
         <CheckBox
             android:id="@+id/child_already_paid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:buttonTint="@color/bill_reminder_tint_color"
-            />
+            android:focusedByDefault="true"
+            android:buttonTint="@color/bill_reminder_tint_color" />
 
     </LinearLayout>
 </FrameLayout>
