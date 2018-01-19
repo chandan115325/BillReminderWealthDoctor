@@ -6,9 +6,9 @@ import android.view.ViewGroup;
 
 import com.wealthdoctor.R;
 import com.wealthdoctor.bill_reminder.expandable_recycler_view.models.ExpandableGroup;
-import com.wealthdoctor.bill_reminder.expandable_recycler_view_main_activity.Artist;
-import com.wealthdoctor.bill_reminder.expandable_recycler_view_main_activity.ExpandableRecyclerViewAdapter;
-import com.wealthdoctor.bill_reminder.expandable_recycler_view_main_activity.Genre;
+import com.wealthdoctor.bill_reminder.expandable_recycler_view_adapter.Artist;
+import com.wealthdoctor.bill_reminder.expandable_recycler_view_adapter.ExpandableRecyclerViewAdapter;
+import com.wealthdoctor.bill_reminder.expandable_recycler_view_adapter.Genre;
 
 import java.util.List;
 
@@ -28,7 +28,7 @@ public class GenreAdapter extends ExpandableRecyclerViewAdapter<GenreViewHolder,
   @Override
   public ArtistViewHolder onCreateChildViewHolder(ViewGroup parent, int viewType) {
     View view = LayoutInflater.from(parent.getContext())
-        .inflate(R.layout.list_item_artist, parent, false);
+        .inflate(R.layout.list_item_child, parent, false);
     return new ArtistViewHolder(view);
   }
 

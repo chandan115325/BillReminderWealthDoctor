@@ -3,17 +3,6 @@ package com.wealthdoctor.bill_reminder.expandable_recycler_view.expand;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-
-import com.wealthdoctor.R;
-
-import static com.wealthdoctor.bill_reminder.expandable_recycler_view_main_activity.GenreDataFactory.makeClassicGenre;
-import static com.wealthdoctor.bill_reminder.expandable_recycler_view_main_activity.GenreDataFactory.makeGenres;
 
 
 public class ExpandActivity extends AppCompatActivity {

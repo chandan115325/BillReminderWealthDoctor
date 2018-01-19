@@ -1,4 +1,4 @@
-package com.wealthdoctor.bill_reminder.expandable_recycler_view_main_activity;
+package com.wealthdoctor.bill_reminder.expandable_recycler_view_adapter;
 
 
 import com.wealthdoctor.bill_reminder.expandable_recycler_view.listeners.ExpandCollapseListener;

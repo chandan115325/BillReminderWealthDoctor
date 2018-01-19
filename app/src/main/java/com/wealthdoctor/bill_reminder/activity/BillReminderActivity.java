@@ -17,7 +17,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.LinearLayout;
 
 import com.wealthdoctor.R;
 import com.wealthdoctor.bill_reminder.calender.data.CalendarAdapter;
@@ -27,7 +26,7 @@ import com.wealthdoctor.bill_reminder.expandable_recycler_view.expand.GenreAdapt
 
 import java.util.Calendar;
 
-import static com.wealthdoctor.bill_reminder.expandable_recycler_view_main_activity.GenreDataFactory.makeGenres;
+import static com.wealthdoctor.bill_reminder.expandable_recycler_view_adapter.GenreDataFactory.makeGenres;
 
 
 public class BillReminderActivity extends AppCompatActivity {

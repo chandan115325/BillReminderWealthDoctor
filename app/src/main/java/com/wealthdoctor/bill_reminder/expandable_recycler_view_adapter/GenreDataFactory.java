@@ -1,4 +1,4 @@
-package com.wealthdoctor.bill_reminder.expandable_recycler_view_main_activity;
+package com.wealthdoctor.bill_reminder.expandable_recycler_view_adapter;
 
 
 import com.wealthdoctor.R;
@@ -25,12 +25,12 @@ public class GenreDataFactory {
 
 
     public static List<Artist> makeRockArtists() {
-        Artist queen = new Artist("Delete", true);
-        Artist styx = new Artist("Edit", false);
-        Artist reoSpeedwagon = new Artist("Already Paid", false);
+        Artist queen = new Artist("Delete",R.id.child_delete,R.id.child_edit, true);
+        //Artist styx = new Artist("Edit",1,1, false);
+        //Artist reoSpeedwagon = new Artist("Already Paid", 1,1,false);
         //Artist boston = new Artist("Boston", true);
 
-        return Arrays.asList(queen, styx, reoSpeedwagon);
+        return Arrays.asList(queen);
     }
 
     public static Genre makeJazzGenre() {
@@ -40,9 +40,9 @@ public class GenreDataFactory {
 
 
     public static List<Artist> makeJazzArtists() {
-        Artist milesDavis = new Artist("Miles Davis", true);
-        Artist ellaFitzgerald = new Artist("Ella Fitzgerald", true);
-        Artist billieHoliday = new Artist("Billie Holiday", false);
+        Artist milesDavis = new Artist("Miles Davis",1,1, true);
+        Artist ellaFitzgerald = new Artist("Ella Fitzgerald", 1,1,true);
+        Artist billieHoliday = new Artist("Billie Holiday", 1,1,false);
 
         return Arrays.asList(milesDavis, ellaFitzgerald, billieHoliday);
     }
@@ -54,10 +54,10 @@ public class GenreDataFactory {
 
 
     public static List<Artist> makeClassicArtists() {
-        Artist beethoven = new Artist("Ludwig van Beethoven", false);
-        Artist bach = new Artist("Johann Sebastian Bach", true);
-        Artist brahms = new Artist("Johannes Brahms", false);
-        Artist puccini = new Artist("Giacomo Puccini", false);
+        Artist beethoven = new Artist("Ludwig van Beethoven", 1,1,false);
+        Artist bach = new Artist("Johann Sebastian Bach", 1,1,true);
+        Artist brahms = new Artist("Johannes Brahms", 1,1,false);
+        Artist puccini = new Artist("Giacomo Puccini", 1,1,false);
 
         return Arrays.asList(beethoven, bach, brahms, puccini);
     }
@@ -69,10 +69,10 @@ public class GenreDataFactory {
 
 
     public static List<Artist> makeSalsaArtists() {
-        Artist hectorLavoe = new Artist("Hector Lavoe", true);
-        Artist celiaCruz = new Artist("Celia Cruz", false);
-        Artist willieColon = new Artist("Willie Colon", false);
-        Artist marcAnthony = new Artist("Marc Anthony", false);
+        Artist hectorLavoe = new Artist("Hector Lavoe", 1,1,true);
+        Artist celiaCruz = new Artist("Celia Cruz", 1,1,false);
+        Artist willieColon = new Artist("Willie Colon", 1,1,false);
+        Artist marcAnthony = new Artist("Marc Anthony", 1,1,false);
 
         return Arrays.asList(hectorLavoe, celiaCruz, willieColon, marcAnthony);
     }
@@ -84,10 +84,10 @@ public class GenreDataFactory {
 
 
     public static List<Artist> makeBluegrassArtists() {
-        Artist billMonroe = new Artist("Bill Monroe", false);
-        Artist earlScruggs = new Artist("Earl Scruggs", false);
-        Artist osborneBrothers = new Artist("Osborne Brothers", true);
-        Artist johnHartford = new Artist("John Hartford", false);
+        Artist billMonroe = new Artist("Bill Monroe", 1,1,false);
+        Artist earlScruggs = new Artist("Earl Scruggs", 1,1,false);
+        Artist osborneBrothers = new Artist("Osborne Brothers", 1,1,true);
+        Artist johnHartford = new Artist("John Hartford", 1,1,false);
 
         return Arrays.asList(billMonroe, earlScruggs, osborneBrothers, johnHartford);
     }

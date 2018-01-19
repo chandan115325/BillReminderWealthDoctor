@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.wealthdoctor.R;
 import com.wealthdoctor.bill_reminder.expandable_recycler_view.models.ExpandableGroup;
 import com.wealthdoctor.bill_reminder.expandable_recycler_view.viewholders.GroupViewHolder;
-import com.wealthdoctor.bill_reminder.expandable_recycler_view_main_activity.Genre;
+import com.wealthdoctor.bill_reminder.expandable_recycler_view_adapter.Genre;
 
 import static android.view.animation.Animation.RELATIVE_TO_SELF;
 

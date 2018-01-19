@@ -1,4 +1,4 @@
-package com.wealthdoctor.bill_reminder.expandable_recycler_view_main_activity;
+package com.wealthdoctor.bill_reminder.expandable_recycler_view_adapter;
 
 import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.ViewGroup;
@@ -37,6 +37,7 @@ public abstract class MultiTypeExpandableRecyclerViewAdapter<GVH extends GroupVi
       return gvh;
     } else if (isChild(viewType)) {
       CVH cvh = onCreateChildViewHolder(parent, viewType);
+
       return cvh;
     }
     throw new IllegalArgumentException("viewType is not valid");
